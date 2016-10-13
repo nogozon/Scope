@@ -1,0 +1,42 @@
+
+bash-3.2$ git clone https://github.com/nogozon/Scope.git
+Cloning into 'Scope'...
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+bash-3.2$ cd Scope/
+bash-3.2$ touch README
+bash-3.2$ ls
+README
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ git remote
+origin
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ git commit -a -m"committed README"
+On branch master
+
+Initial commit
+
+Untracked files:
+        README
+
+nothing added to commit but untracked files present
+bash-3.2$ git add README 
+bash-3.2$ git commit -a -m"committed README"
+[master (root-commit) 2f3b795] committed README
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README
+bash-3.2$ git push master origin
+error: src refspec origin does not match any.
+error: failed to push some refs to 'master'
+bash-3.2$ git push origin master
+Username for 'https://github.com': yetkinyilmaz
+Password for 'https://yetkinyilmaz@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 214 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/nogozon/Scope.git
+ * [new branch]      master -> master
+
+
